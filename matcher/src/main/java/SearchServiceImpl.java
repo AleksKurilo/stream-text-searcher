@@ -1,11 +1,12 @@
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Slf4j
 @Builder
-class SearchServiceImpl implements SearchService{
+class SearchServiceImpl implements SearchService {
 
     private final String search;
     private static final Map<String, Set<DataSearchInfo>> result = new HashMap<>();
@@ -18,39 +19,38 @@ class SearchServiceImpl implements SearchService{
             Map<String, Set<DataSearchInfo>> match = match(lineOffset, line);
 
             match.forEach((key, value) -> {
-                result.computeIfPresent(key, (key1, value1) -> add(value1, value));
+                result.computeIfPresent(key, (key1, value1) -> mergeSets(value1, value));
                 result.putIfAbsent(key, value);
             });
 
         }
+
         return result;
     }
 
     private Map<String, Set<DataSearchInfo>> match(int lineOffset, String source) {
         Map<String, Set<DataSearchInfo>> result = new HashMap<>();
+        Map<String, Set<DataSearchInfo>> map = match(lineOffset, search, source);
 
-            Map<String, Set<DataSearchInfo>> map = searching(lineOffset, search, source);
-
-            if (!map.isEmpty()) {
-                result.putAll(map);
-            }
-
-        return result;
-    }
-
-    private Map<String, Set<DataSearchInfo>> searching(int lineOffset, String search, String source) {
-        Set<DataSearchInfo> dataSearchInfos = new HashSet<>();
-        dataSearchInfos.addAll(searchInLine(lineOffset, search, source));
-        Map<String, Set<DataSearchInfo>> result = new HashMap<>();
-
-        if (!dataSearchInfos.isEmpty()) {
-            result.put(search, dataSearchInfos);
+        if (!map.isEmpty()) {
+            result.putAll(map);
         }
 
         return result;
     }
 
-    private Set<DataSearchInfo> searchInLine(int lineOffset, String search, String line) {
+    private Map<String, Set<DataSearchInfo>> match(int lineOffset, String search, String source) {
+        Set<DataSearchInfo> dataSearchInfos = new HashSet<>(matchInLine(lineOffset, search, source));
+        Map<String, Set<DataSearchInfo>> resultMap = new HashMap<>();
+
+        if (!dataSearchInfos.isEmpty()) {
+            resultMap.put(search, dataSearchInfos);
+        }
+
+        return resultMap;
+    }
+
+    private Set<DataSearchInfo> matchInLine(int lineOffset, String search, String line) {
         int matherCount = (int) Arrays.stream(line.split(" "))
                 .filter(word -> word.equals(search)).count();
 
@@ -81,7 +81,7 @@ class SearchServiceImpl implements SearchService{
 
     }
 
-    private static Set<DataSearchInfo> add(Set<DataSearchInfo> target, Set<DataSearchInfo> value) {
+    private static Set<DataSearchInfo> mergeSets(Set<DataSearchInfo> target, Set<DataSearchInfo> value) {
         target.addAll(value);
         return target;
     }

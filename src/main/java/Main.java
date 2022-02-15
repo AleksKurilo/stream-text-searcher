@@ -2,7 +2,8 @@ import io.reactivex.Flowable;
 import io.reactivex.schedulers.Schedulers;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.*;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -21,26 +22,26 @@ public class Main {
 
     private static final List<SearchService> searchServiceList = List.of(searchDonald, searchDavid);
     private static final OutputService OUTPUT_SERVICE = new OutputConsoleService();
-    private static final ConcurrentMap<String, Set<DataSearchInfo>> result = new ConcurrentHashMap();
+    private static final ConcurrentMap<String, Set<DataSearchInfo>> result = new ConcurrentHashMap<>();
 
     public static void main(String[] args) {
         log.info("Start application");
         String[] source = FileUtils.readClasspathFileAsList("source/big-1.txt").toArray(new String[0]);
-        final AtomicInteger processedRecords = new AtomicInteger(0);
+        final AtomicInteger processedLines = new AtomicInteger(0);
         final AtomicBoolean flag = new AtomicBoolean(true);
 
-        Flowable.just(getPartition(processedRecords.get(), ConfigurationDefaults.LINE_LIMIT, source))
+        Flowable.just(getPartition(processedLines.get(), ConfigurationDefaults.LINE_LIMIT, source))
                 .flatMapCompletable(firstPage -> Flowable.range(0, 1000_000_000)
                         .takeWhile(counter -> flag.get())
-                        .flatMap(counter -> Flowable.just(getPartition(processedRecords.get(), ConfigurationDefaults.LINE_LIMIT, source))
+                        .flatMap(counter -> Flowable.just(getPartition(processedLines.get(), ConfigurationDefaults.LINE_LIMIT, source))
                                 .doOnNext(records -> Flowable.fromIterable(searchServiceList)
                                         .subscribeOn(Schedulers.io())
                                         .doOnNext(searcher -> result.putAll(searcher.search(records)))
                                         .blockingSubscribe()
                                 )
                                 .doOnNext(records -> {
-                                    processedRecords.getAndUpdate(pr -> pr + ConfigurationDefaults.LINE_LIMIT);
-                                    flag.set(!(processedRecords.get() > source.length));
+                                    processedLines.getAndUpdate(pr -> pr + ConfigurationDefaults.LINE_LIMIT);
+                                    flag.set(!(processedLines.get() > source.length));
                                 })
                         )
                         .ignoreElements()
@@ -64,6 +65,4 @@ public class Main {
 
         return partition;
     }
-
-
 }
