@@ -1,5 +1,3 @@
-package records.validator;
-
 import java.util.Map;
 import java.util.Set;
 

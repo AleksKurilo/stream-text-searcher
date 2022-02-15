@@ -1,5 +1,3 @@
-package records.validator;
-
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 

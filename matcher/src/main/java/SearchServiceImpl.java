@@ -1,5 +1,3 @@
-package records.validator;
-
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import java.util.*;
@@ -7,11 +5,12 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Builder
-class SearchServiceImpl {
+class SearchServiceImpl implements SearchService{
 
     private final String search;
     private static final Map<String, Set<DataSearchInfo>> result = new HashMap<>();
 
+    @Override
     public Map<String, Set<DataSearchInfo>> search(String[] lines) {
         log.info("Searching: {}", search);
         for (String line : lines) {
@@ -27,7 +26,7 @@ class SearchServiceImpl {
         return result;
     }
 
-    public Map<String, Set<DataSearchInfo>> match(int lineOffset, String source) {
+    private Map<String, Set<DataSearchInfo>> match(int lineOffset, String source) {
         Map<String, Set<DataSearchInfo>> result = new HashMap<>();
 
             Map<String, Set<DataSearchInfo>> map = searching(lineOffset, search, source);
@@ -62,7 +61,7 @@ class SearchServiceImpl {
         List<Integer> charOffsetList = new ArrayList<>();
 
         for (int i = 0; i < matherCount; i++) {
-            int charOffset = line.indexOf(search);
+            int charOffset = line.indexOf(search) - String.valueOf(lineOffset).length() - 1;
 
             if (charOffsetList.contains(charOffset)) {
                 int index = line.indexOf(search, charOffset + 1);

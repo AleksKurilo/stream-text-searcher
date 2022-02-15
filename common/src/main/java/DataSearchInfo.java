@@ -1,5 +1,3 @@
-package records.validator;
-
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
