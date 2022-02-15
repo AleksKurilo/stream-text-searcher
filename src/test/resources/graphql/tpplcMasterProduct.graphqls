@@ -1,0 +1,14 @@
+query tpplcMasterProduct($gpid: ID!) {
+    tpplcMasterProduct(gpid: $gpid) {
+        gpid
+        name
+        brands {
+            id
+        }
+        brandShared
+        products {
+            id
+        }
+    }
+}
+

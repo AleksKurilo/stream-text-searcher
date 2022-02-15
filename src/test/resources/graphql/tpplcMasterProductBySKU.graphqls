@@ -1,0 +1,13 @@
+query tpplcMasterProductBySKU($sku: ID!) {
+    tpplcMasterProductBySKU(sku: $sku) {
+        gpid
+        name
+        brands {
+            id
+        }
+        brandShared
+        products {
+            id
+        }
+    }
+}

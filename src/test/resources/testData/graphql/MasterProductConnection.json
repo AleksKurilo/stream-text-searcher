@@ -1,0 +1,24 @@
+{
+  "edges": [
+    {
+      "gpid": "1100552457",
+      "name": "Halcyon P+ Compact Radiator",
+      "brands": [
+        {
+          "id": "tp"
+        }
+      ],
+      "products": [
+        {
+          "id": "eyJza3VDb2RlIjoiMjkzNjc4IiwiY2F0YWxvZ0lkIjoiVHJhdmlzUGVya2luc1dlYiJ9"
+        }
+      ],
+      "brandShared": false
+    }
+  ],
+  "totalCount": 1,
+  "pageInfo": {
+    "endCursor": "2.0300586:Halcyon P+ Compact Radiator:1100552457",
+    "hasNextPage": false
+  }
+}

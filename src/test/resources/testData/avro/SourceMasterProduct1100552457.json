@@ -1,0 +1,610 @@
+{
+  "origin": "GroupMasterProductCatalog",
+  "eventId": "3DB9932C-EAD6-415A-A4A4-1282DB833390",
+  "gpid": "1100552457",
+  "description": "Halcyon P+ Compact Radiator",
+  "approvalStatus": "approved",
+  "lifeCycleStatus": "MULTICHANNEL_READY",
+  "webCopy": "Halcyon 500 x 800 P+ Comp Rad By Stelrad",
+  "minOrderQuantity": 0,
+  "featuresAndBenefits": [
+    "940 W",
+    "3207 BTU/h",
+    "10 years warranty",
+    "Comes with wall bracket (L), plastic grommets , blind plug, airvent plug, screws and plastic plugs",
+    "Factory fitted top grills and side panels for robust construction and improved aesthetics",
+    "Finished to RAL9016, suitable for central heating systems",
+    "Guaranteed to perform to a maximum working pressure of 145 psi (10 bar), and conform to BS EN 442",
+    "High quality packaging gives great protection when in transit",
+    "Projection from wall including radiator - 69mm-80mm"
+  ],
+  "taxCode": "S",
+  "mainUom": "EA",
+  "sellingUom": "EA",
+  "unitPriceUom": null,
+  "equivalentDivisor": null,
+  "alternativeUomGroup": {
+    "unit": [
+      {
+        "uom": "OU",
+        "uomNumeric": "1.0"
+      }
+    ]
+  },
+  "supplierCode": "F1293",
+  "supplierPartNumber": "421508/",
+  "keywords": [
+    "halcyon",
+    "500x800",
+    "HALCYON 500x800",
+    "HALCYON P+"
+  ],
+  "ceMarked": null,
+  "cosshhRequired": false,
+  "dopRequired": false,
+  "epdRequired": false,
+  "weeeRequired": false,
+  "weee": "99",
+  "businessUnits": "T",
+  "channelData": [
+    {
+      "status": null,
+      "catalogId": "tpWebProductCatalog",
+      "skuCode": "293678",
+      "productCategory": [
+        "1835002"
+      ],
+      "description": "Halcyon P+ Compact Radiator - 500mm x 800mm",
+      "webCopy": "This Halcyon P+ Compact Radiator is a slim, efficient and robust compact panel radiator for central heating systems. It comes with a 10 year warranty for that extra peace of mind & has an output of 940 W / 3207 BTU/h. This Halcyon P+ Compact Radiator is guaranteed to perform to a maximum working pressure of 145 psi (10 bar) & conforms to BS EN 442. It's projection from the wall (including the radiator) is between 101mm-112mm & it comes complete with: wall bracket, plastic grommets, blind plug, airvent plug as well as screws & plastic plugs.",
+      "minOrderQuantity": null,
+      "discontinued": false,
+      "fulfilmentType": "STANDARD",
+      "sellOnly": false,
+      "sellOnlyReason": "",
+      "searchBoostValue": null,
+      "swapCode": null,
+      "qualityRanking": null,
+      "onlineDate": 1531267200000,
+      "offlineDate": 1531267200000,
+      "approvalStatus": "approved",
+      "brandName": null,
+      "range": null,
+      "rangeDescription": null,
+      "sellingUom": null,
+      "unitPriceUom": null,
+      "equivalentDivisor": null,
+      "baseProduct": null
+    }
+  ],
+  "productSkus": [
+    {
+      "code": "1100552457",
+      "catalogFamily": "core"
+    },
+    {
+      "code": "293678",
+      "catalogFamily": "merchant"
+    }
+  ],
+  "singleDimensions": {
+    "length": "800",
+    "height": "500",
+    "width": "77",
+    "weight": "25090",
+    "volume": "30800000",
+    "quantity": null
+  },
+  "innerDimensions": {
+    "length": null,
+    "height": null,
+    "width": null,
+    "weight": null,
+    "volume": null,
+    "quantity": null
+  },
+  "outerDimensions": {
+    "length": null,
+    "height": null,
+    "width": null,
+    "weight": null,
+    "volume": null,
+    "quantity": null
+  },
+  "palletDimensions": {
+    "length": "1030",
+    "height": "1050",
+    "width": "830",
+    "weight": "421600",
+    "volume": "897645000",
+    "quantity": "20"
+  },
+  "jdaCaseDimensions": {
+    "length": null,
+    "height": null,
+    "width": null,
+    "weight": null,
+    "volume": null,
+    "quantity": null
+  },
+  "palletHi": "10",
+  "palletTi": "2",
+  "attributeGroup": [
+    {
+      "groupId": "universeClassification",
+      "name": null,
+      "attribute": [
+        {
+          "id": "13",
+          "name": "Brands",
+          "value": "SP",
+          "unit": null
+        },
+        {
+          "id": "1",
+          "name": "PTS Short Description",
+          "value": "HALCYON 500X800 P+ COMP RAD BY STELRAD",
+          "unit": null
+        },
+        {
+          "id": "2",
+          "name": "PTS Long Description",
+          "value": "HALCYON 500X800 P+ COMP RAD BY STELRAD",
+          "unit": null
+        },
+        {
+          "id": "18",
+          "name": "PTS Keyword",
+          "value": "H421508",
+          "unit": null
+        },
+        {
+          "id": "17",
+          "name": "Product Analysis Group 4",
+          "value": "H126500",
+          "unit": null
+        },
+        {
+          "id": "15",
+          "name": "TP Group",
+          "value": "1747",
+          "unit": null
+        },
+        {
+          "id": "6",
+          "name": "Purchase UOM",
+          "value": "EA",
+          "unit": null
+        },
+        {
+          "id": "5",
+          "name": "Stock UOM",
+          "value": "EA",
+          "unit": null
+        },
+        {
+          "id": "4",
+          "name": "Cost/Supplier UOM",
+          "value": "EA",
+          "unit": null
+        },
+        {
+          "id": "3",
+          "name": "Volume UOM",
+          "value": "EA",
+          "unit": null
+        },
+        {
+          "id": "7",
+          "name": "Globally Sourced",
+          "value": "N",
+          "unit": null
+        }
+      ]
+    },
+    {
+      "groupId": "CommonSupplierNonWebClassification",
+      "name": null,
+      "attribute": [
+        {
+          "id": "4",
+          "name": "Age Restriction",
+          "value": "N",
+          "unit": null
+        },
+        {
+          "id": "12",
+          "name": "Weight UOM",
+          "value": "EA",
+          "unit": null
+        },
+        {
+          "id": "11",
+          "name": "Weight",
+          "value": "25.09",
+          "unit": null
+        }
+      ]
+    },
+    {
+      "groupId": "GroupMasterClassification:1001185",
+      "name": null,
+      "attribute": [
+        {
+          "id": "1001980",
+          "name": "Depth",
+          "value": "77 mm",
+          "unit": null
+        },
+        {
+          "id": "1153004",
+          "name": "Number of Convectors",
+          "value": "1",
+          "unit": null
+        },
+        {
+          "id": "1015235",
+          "name": "Number of Panels",
+          "value": "2",
+          "unit": null
+        },
+        {
+          "id": "1151001",
+          "name": "Panel",
+          "value": "Double Plus",
+          "unit": null
+        },
+        {
+          "id": "1152004",
+          "name": "Heat Output BTU",
+          "value": "3001-4000",
+          "unit": null
+        },
+        {
+          "id": "1001953",
+          "name": "Height",
+          "value": "603 mm",
+          "unit": null
+        },
+        {
+          "id": "1001950",
+          "name": "Width",
+          "value": "803 mm",
+          "unit": null
+        },
+        {
+          "id": "1001960",
+          "name": "Projection from Wall Including Radiator",
+          "value": "101mm-112mm",
+          "unit": null
+        },
+        {
+          "id": "1001968",
+          "name": "Projection from Wall",
+          "value": "14mm-25mm",
+          "unit": null
+        },
+        {
+          "id": "1001957",
+          "name": "Pipe Inlet Size",
+          "value": "G1/2-450mm",
+          "unit": null
+        },
+        {
+          "id": "1000177",
+          "name": "Weight",
+          "value": "17.79 kg",
+          "unit": null
+        },
+        {
+          "id": "1000918",
+          "name": "Material",
+          "value": "Steel",
+          "unit": null
+        },
+        {
+          "id": "1000187",
+          "name": "Colour",
+          "value": "White",
+          "unit": null
+        },
+        {
+          "id": "1001996",
+          "name": "Finish",
+          "value": "RAL9016",
+          "unit": null
+        },
+        {
+          "id": "1012998",
+          "name": "Style",
+          "value": "Compact",
+          "unit": null
+        },
+        {
+          "id": "1001962",
+          "name": "Wattage",
+          "value": "940 W",
+          "unit": null
+        },
+        {
+          "id": "1001958",
+          "name": "Maximum Temperature",
+          "value": "95 deg",
+          "unit": null
+        },
+        {
+          "id": "1001945",
+          "name": "BTU/h",
+          "value": "3207",
+          "unit": null
+        },
+        {
+          "id": "1003737",
+          "name": "Mount Type",
+          "value": "Wall Mounted",
+          "unit": null
+        },
+        {
+          "id": "1003751",
+          "name": "Years Guaranteed",
+          "value": "10",
+          "unit": null
+        },
+        {
+          "id": "1000179",
+          "name": "Type",
+          "value": "Standard Panel",
+          "unit": null
+        }
+      ]
+    },
+    {
+      "groupId": "CommonSupplierWebClassification",
+      "name": null,
+      "attribute": [
+        {
+          "id": "9",
+          "name": "Brand Name",
+          "value": "Halcyon",
+          "unit": null
+        },
+        {
+          "id": "12",
+          "name": "Range Description",
+          "value": "PANEL RAD",
+          "unit": null
+        },
+        {
+          "id": "10",
+          "name": "Country Origin",
+          "value": "TURKEY",
+          "unit": null
+        },
+        {
+          "id": "7",
+          "name": "Manufacturer Model No",
+          "value": "421508",
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "sellOnly": false,
+  "sellOnlyReason": null,
+  "onlineDate": null,
+  "offlineDate": null,
+  "images": {
+    "name": "gallery",
+    "media": [
+      {
+        "name": "GPID_1100552457_03",
+        "mediaItem": [
+          {
+            "name": "GPID_1100552457_03_detail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$detail$",
+            "format": "detail",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$SupplierMediaScene7InputFormat$",
+            "format": "SupplierMediaScene7InputFormat",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_smallThumbnail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$smallThumbnail$",
+            "format": "smallThumbnail",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_preview",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$preview$",
+            "format": "preview",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_thumbnail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$thumbnail$",
+            "format": "thumbnail",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_smallNormal",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$smallNormal$",
+            "format": "smallNormal",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_normal",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$normal$",
+            "format": "normal",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_largeNormal",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$largeNormal$",
+            "format": "largeNormal",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_03_smallDetail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_03?$smallDetail$",
+            "format": "smallDetail",
+            "mimeType": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "name": "GPID_1100552457_05",
+        "mediaItem": [
+          {
+            "name": "GPID_1100552457_05_detail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$detail$",
+            "format": "detail",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$SupplierMediaScene7InputFormat$",
+            "format": "SupplierMediaScene7InputFormat",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_smallThumbnail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$smallThumbnail$",
+            "format": "smallThumbnail",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_preview",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$preview$",
+            "format": "preview",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_thumbnail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$thumbnail$",
+            "format": "thumbnail",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_smallNormal",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$smallNormal$",
+            "format": "smallNormal",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_normal",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$normal$",
+            "format": "normal",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_largeNormal",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$largeNormal$",
+            "format": "largeNormal",
+            "mimeType": "image/jpeg"
+          },
+          {
+            "name": "GPID_1100552457_05_smallDetail",
+            "url": "//s7g10.scene7.com/is/image/cityplumbingsupplies/GPID_1100552457_05?$smallDetail$",
+            "format": "smallDetail",
+            "mimeType": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  },
+  "coshhSheets": null,
+  "dopSheets": null,
+  "gilSheets": null,
+  "techSheets": null,
+  "epdSheets": null,
+  "baseProduct": null,
+  "gtin": "8698284016941",
+  "components": [
+    {
+      "type": "CONSISTS_OF",
+      "gpid": "1000719802",
+      "sku": [
+        {
+          "code": "931780",
+          "catalogFamily": "merchant"
+        },
+        {
+          "code": "789456",
+          "catalogFamily": "bss"
+        }
+      ],
+      "quantity": 1
+    },
+    {
+      "type": "CONSISTS_OF",
+      "gpid": "1000293576",
+      "sku": [
+        {
+          "code": "229765",
+          "catalogFamily": "merchant"
+        },
+        {
+          "code": "228907",
+          "catalogFamily": "wickes"
+        },
+        {
+          "code": "123456",
+          "catalogFamily": "bss"
+        }
+      ],
+      "quantity": 1
+    },
+    {
+      "type": "CONSISTS_OF",
+      "gpid": "1000293581",
+      "sku": [
+        {
+          "code": "472930",
+          "catalogFamily": "merchant"
+        },
+        {
+          "code": "228901",
+          "catalogFamily": "wickes"
+        },
+        {
+          "code": "456789",
+          "catalogFamily": "bss"
+        }
+      ],
+      "quantity": 1
+    }
+  ],
+  "explosiveOrPoison": false,
+  "damAssetId": "GPID_1100552457",
+  "explosivePrecursor": null,
+  "singleUom": "EA",
+  "supplierData": [
+    {
+      "partNumber": "421508/",
+      "supplierId": "F1293",
+      "gtin": [
+        {
+          "gtin": "8698284016941",
+          "uom": "EA"
+        }
+      ]
+    }
+  ],
+  "coreProperties": {
+    "property": [
+      {
+        "name": "itemGroupRental",
+        "value": "testProp",
+        "type": "String"
+      }
+    ]
+  },
+  "hireType": null,
+  "minimumHirePeriod": null,
+  "pricingGroup": "",
+  "ownBrand": null,
+  "brandCode": null
+}

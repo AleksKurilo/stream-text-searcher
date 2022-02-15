@@ -1,0 +1,20 @@
+query tpplcMasterProducts($input: TpplcMasterProductSearchInput!) {
+  tpplcMasterProducts(input: $input) {
+    edges {
+      gpid
+      name
+      brandShared
+      brands {
+        id
+      }
+      products {
+        id
+      }
+    }
+    totalCount
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
