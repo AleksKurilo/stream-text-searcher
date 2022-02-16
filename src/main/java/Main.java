@@ -21,22 +21,24 @@ public class Main {
             .build();
 
     private static final List<SearchService> searchServiceList = List.of(searchDonald, searchDavid);
-    private static final OutputService OUTPUT_SERVICE = new OutputConsoleService();
+    private static final AggregationService aggregationService = new AggregationResultService();
+    private static final OutputService outputService = new OutputConsoleService();
     private static final ConcurrentMap<String, Set<DataSearchInfo>> result = new ConcurrentHashMap<>();
 
     public static void main(String[] args) {
         log.info("Start application");
-        String[] source = FileUtils.readClasspathFileAsList("source/big-1.txt").toArray(new String[0]);
+
+        final String[] source = FileUtils.readClasspathFileAsList("source/big-1.txt").toArray(new String[0]);
         final AtomicInteger processedLines = new AtomicInteger(0);
         final AtomicBoolean flag = new AtomicBoolean(true);
 
-        Flowable.just(getPartition(processedLines.get(), ConfigurationDefaults.LINE_LIMIT, source))
+        Flowable.just(TextUtils.getPartition(processedLines.get(), ConfigurationDefaults.LINE_LIMIT, source))
                 .flatMapCompletable(firstPage -> Flowable.range(0, 1000_000_000)
                         .takeWhile(counter -> flag.get())
-                        .flatMap(counter -> Flowable.just(getPartition(processedLines.get(), ConfigurationDefaults.LINE_LIMIT, source))
+                        .flatMap(counter -> Flowable.just(TextUtils.getPartition(processedLines.get(), ConfigurationDefaults.LINE_LIMIT, source))
                                 .doOnNext(records -> Flowable.fromIterable(searchServiceList)
                                         .subscribeOn(Schedulers.io())
-                                        .doOnNext(searcher -> result.putAll(searcher.search(records)))
+                                        .doOnNext(searcher -> aggregationService.merge(searcher.search(records), result))
                                         .blockingSubscribe()
                                 )
                                 .doOnNext(records -> {
@@ -48,21 +50,7 @@ public class Main {
                 )
                 .blockingGet();
 
-        OUTPUT_SERVICE.print(result);
+        outputService.print(result);
         log.info("Finished application");
-    }
-
-    private static String[] getPartition(int startOf, int limit, String[] source) {
-        String[] partition = new String[limit];
-
-        if (startOf + limit > source.length) {
-            limit = source.length - startOf;
-        }
-
-        if (limit >= 0) {
-            System.arraycopy(source, startOf, partition, 0, limit);
-        }
-
-        return partition;
     }
 }

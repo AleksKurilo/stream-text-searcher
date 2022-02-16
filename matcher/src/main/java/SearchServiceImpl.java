@@ -12,7 +12,7 @@ class SearchServiceImpl implements SearchService {
     private static final Map<String, Set<DataSearchInfo>> result = new HashMap<>();
 
     @Override
-    public Map<String, Set<DataSearchInfo>> search(String[] lines) {
+    public Map<String, Set<DataSearchInfo>> search(final String[] lines) {
         log.info("Searching: {}", search);
         for (String line : lines) {
             int lineOffset = Integer.parseInt(line.split(":")[0]);
