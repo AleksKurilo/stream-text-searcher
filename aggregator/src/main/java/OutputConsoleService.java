@@ -3,6 +3,11 @@ import java.util.Set;
 
 class OutputConsoleService implements OutputService{
 
+    /**
+     * Print data to the console.
+     *
+     * @param map
+     */
     @Override
     public void print(Map<String, Set<DataSearchInfo>> map) {
         map.forEach((key, value) -> {

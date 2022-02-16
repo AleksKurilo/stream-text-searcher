@@ -11,6 +11,12 @@ class SearchServiceImpl implements SearchService {
     private final String search;
     private static final Map<String, Set<DataSearchInfo>> result = new HashMap<>();
 
+    /**
+     * Search {@link String} in the array of {@link String}.
+     *
+     * @param lines text where will be searching.
+     * @return map of matches with information with their location in the text.
+     */
     @Override
     public Map<String, Set<DataSearchInfo>> search(final String[] lines) {
         log.info("Searching: {}", search);
