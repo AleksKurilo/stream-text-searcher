@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
@@ -9,9 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AggregationResultServiceTest {
 
-    private AggregationResultService unit = new AggregationResultService();
+    private final AggregationResultService unit = new AggregationResultService();
 
     @Test
+    @DisplayName("Should return correct result map")
     void mergeTest(){
         Set<DataSearchInfo> data1 = new HashSet<>();
         data1.add(DataSearchInfo.builder().lineOffset(0).charOffset(1).build());
